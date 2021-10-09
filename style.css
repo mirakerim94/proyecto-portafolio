@@ -53,32 +53,34 @@ nav{
     display: flex;
     justify-content: center;
     background-color: rgb(241, 239, 239);
+    padding-top: 5em;
 }
 .general{
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: center;
-    margin: 4em;
-    padding: 3em;
+    margin: 8em auto;
+    padding-left: 2em;
 }
 .hola{
     width: 50%;
-    padding:6em;
+    padding-top: 5em;
 }
 .h1{
-    font-size: 2vw;
+    font-size: 3vw;
     font-style:inherit; 
     font-family: 'Bowlby One SC', cursive;
     font-weight: lighter;
 }
 .mira{
     color: rgb(5, 105, 5);
-    font-size: 3vw;
+    font-size: 5vw;
     font-family: 'Sriracha', cursive;
 }
 .mira-p{
     padding: 1em 0em;
     font-family: 'Mountains of Christmas', cursive;
+    font-size: larger;
 }
 .loquehago{
     padding:0.5em 2em;
