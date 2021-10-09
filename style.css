@@ -7,6 +7,7 @@ body{
     background-color: rgb(246, 242, 236);
     max-width: 100%;
     box-shadow: inset right 4em black;
+    box-shadow: 2px -5px -10px -20px rgb(75, 73, 73) inset;
 }
 /*Empiezo dar estilo al Header*/
 header{
@@ -23,6 +24,7 @@ nav{
     text-align: right;
     padding: 3em; 
     word-spacing: 1.5em;
+    box-shadow: 0px 22px 25px -10px rgb(121, 121, 121);
 }
 
 .nav-a{
@@ -54,6 +56,7 @@ nav{
     justify-content: center;
     background-color: rgb(241, 239, 239);
     padding-top: 5em;
+    
 }
 .general{
     width: 95%;
@@ -230,23 +233,24 @@ cite{
     display: flex;
     justify-content: center;
     margin-top: 4.5em;
+    border:1px solid black;
 }
 /* div general */
 .contacto{
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: center;
-    border:3px solid white;
+    border:3px solid rgb(155, 145, 145);
     border-radius: 2em;
-    margin:5em 10em;
-    padding: 3.5em;
+    margin:0.3em 10em;
     
 }
 /* caja contenedora */
 .redes{
     width: 50%;
     text-align: center;
-    margin-right: 2em;
+    margin-right: 3em;
+    border:2px solid red;
 }
 /* h2 */
 .font{
@@ -257,7 +261,6 @@ cite{
 .font-p{
     font-size: larger;
     font-style: italic;
-    margin-bottom: 3em;
 }
 /* 1ra caja */
 .ul-form{
@@ -298,6 +301,7 @@ cite{
     width: 50%;
     display:flex;
     flex-wrap: wrap;
+    border:1px solid blue;
 }
 .h2-form{
     width: 100%;
@@ -312,21 +316,22 @@ cite{
 .name{
     width: 50%;
     font-weight: bolder;
+    margin-bottom: 1em;
 }
 .surname{
     width: 50%;
     font-weight: bolder;
+    margin-bottom: 1em;
 }
 
 .email{
     width: 100%;
-    margin-top: 0.4em;
     font-weight: bolder;
+    margin-bottom: 1em;
 }
 
 .mensaje{
     width: 100%;
-    margin-top: 0.4em;
     font-weight: bolder;
 }
 
@@ -354,12 +359,6 @@ cite{
 .input-form:focus{
     outline-color: darkgreen;
 }
-
-
-
-
-
-
 
 /*Aca termina mi ultima Section*/
 
