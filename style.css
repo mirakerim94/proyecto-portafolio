@@ -33,52 +33,140 @@ nav{
 .presentation{
     width: 100%;
     display: flex;
+    justify-content: center;
+    border:2px solid red;
 }
 .general{
     width: 90%;
     display: flex;
+    justify-content: center;
+    border:4px solid darkslateblue;
 }
 .hola{
-    width: 45%;
+    width: 50%;
+    border:2px solid green;
+    padding:6em;
 }
+.h1{
+    font-size: 2vw;
+    font-style:inherit;
+}
+.mira{
+    color: rgb(5, 105, 5);
+    font-family: 'Bowlby One SC', cursive;
+}
+.mira-p{
+    padding: 1em 0em;
+    font-family: 'Mountains of Christmas', cursive;
+}
+.loquehago{
+    padding:0.5em 2em;
+    border-radius: 3em;
+    background-color: rgb(5, 105, 5);
+}
+.loquehago:hover{
+    background-color: rgb(81, 107, 38);
+}
+.hago-a{
+    text-decoration: none;
+    color:whitesmoke;
+    text-transform: uppercase;
+}
+
 .developer{
-    width: 45%;
+    width: 50%;
+    border:2px solid orange;
+    padding:2em;
 }
 /*aca termina mi 1ra Section*/
 
 /*Empiezo dar estilo a mi 2da Section*/
-.conocimiento{
-    width: 100%;
-    display:flex;
-}
-.main{
-    width: 80%;
-    display: flex;
-}
-.head{
-    width: 100%;
-}
-.cajitas{
-    width: 20%;
-}
-/*Aca termina mi 2da Section*/
-
-/*Empiezo dar estilo a mi Section de cita*/
-.cite{
+.conocimientos{
     width: 100%;
     display:flex;
     justify-content: center;
+    margin-top: 8em;
+}
+.main{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* estas clases estan compartidas con el seccion de proyectos */
+.head{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.thesame-h2{
+    font-size: 4vw;
+}
+.proyectos-p{
+    padding: 2em;
+    font-family: 'Dosis', sans-serif;
+    font-style: oblique;
+}
+/*  */
+
+.main-cajitas{
+    width: 70%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cajitas{
+    border:1px solid gray;
+    border-radius: 1em;
+    width: 30%;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: bolder;
+    padding:1em;
+}
+.cajitas:hover{
+    border:1px solid rgb(33, 167, 33);
+    border-radius: 1em;
+    color: rgb(33, 167, 33);
+}
+
+
+/*Aca termina mi 2da Section*/
+
+/*Empiezo dar estilo a mi Section de cita*/
+.section-cite{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 8em;
+    background-color: rgb(139, 187, 139);
 }
 .cita{
     width: 60%;
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding:1em;
+    margin:2em auto;
+}
+.cite-i{
+    font-size: 6vw;
+    padding-bottom: 0.5em;
+}
+.strong{
+    padding-top: 2em;
+    font-size: 2vw;
+}
+cite{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.8vw;
 }
 /*Aca termina mi Section de cita*/
 
 /*Empiezo dar estilo a mi Section de mis proyectos*/
 .proyectos{
     width: 100%;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     margin-top: 4em;
@@ -89,22 +177,28 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border:2px solid green; 
+    margin-top: 3em; 
 }
-.head{
-    width: 100%;
-    border:1px solid blue;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
 .cajita2{
     width: 30%;
-    border:2px solid orange;
+    border:1px solid gray;
+    border-radius: 1.5em;
     margin-bottom: 1em;
     text-align: center;
     font-weight: bolder;
-    padding:2em;
+    overflow: hidden;
+}
+.proyectos-a{
+    text-decoration: none;
+    color:black;
+}
+.cajita2:hover{
+    border: 1px solid rgb(33, 167, 33);
+    border-radius: 1.5em;
+    color: rgb(33, 167, 33);
+}
+.proyectos-a:hover{
+    color: rgb(33, 167, 33);
 }
 /*Aca termina mi Section de mis proyectos*/
 
