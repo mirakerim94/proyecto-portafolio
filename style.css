@@ -4,18 +4,15 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(246, 242, 236);
-    max-width: 100%;
-    box-shadow: inset right 4em black;
-    box-shadow: 2px -5px -10px -20px rgb(75, 73, 73) inset;
+    box-shadow:inset -17px 0px 20px -2px gray;
 }
 /*Empiezo dar estilo al Header*/
 header{
     width: 100%;
-    background-color: rgb(243, 205, 155);
     position: fixed;
     display: flex;
     justify-content: right;
+    box-shadow: 0px 22px 25px -10px rgb(121, 121, 121);
     padding-right: 5em;
     background-image: url(https://images.pexels.com/photos/1205301/pexels-photo-1205301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
@@ -24,7 +21,6 @@ nav{
     text-align: right;
     padding: 3em; 
     word-spacing: 1.5em;
-    box-shadow: 0px 22px 25px -10px rgb(121, 121, 121);
 }
 
 .nav-a{
@@ -54,9 +50,7 @@ nav{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(241, 239, 239);
     padding-top: 5em;
-    
 }
 .general{
     width: 95%;
@@ -110,7 +104,7 @@ nav{
     width: 100%;
     display:flex;
     justify-content: center;
-    margin-top: 8em;
+    margin-top: 15em;
 }
 .main{
     width: 60%;
@@ -131,6 +125,7 @@ nav{
     padding: 2em;
     font-family: 'Dosis', sans-serif;
     font-style: oblique;
+    font-size: larger;
 }
 /*  */
 
@@ -139,6 +134,7 @@ nav{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 .cajitas{
     border:1px solid gray;
@@ -163,7 +159,7 @@ nav{
     width: 100%;
     display:flex;
     justify-content: center;
-    margin-top: 8em;
+    margin-top: 15em;
     background-color: rgb(139, 187, 139);
 }
 .cita{
@@ -194,7 +190,7 @@ cite{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 4em;
+    margin-top: 15em;
 }
 .container{
     width: 80%;
@@ -232,17 +228,17 @@ cite{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 4.5em;
-    border:1px solid black;
+    margin-top: 15em;
 }
 /* div general */
 .contacto{
     width: 95%;
     display: flex;
     justify-content: center;
-    border:3px solid rgb(155, 145, 145);
+    border:1px solid rgb(155, 145, 145);
     border-radius: 2em;
     margin:0.3em 10em;
+    
     
 }
 /* caja contenedora */
@@ -250,7 +246,7 @@ cite{
     width: 50%;
     text-align: center;
     margin-right: 3em;
-    border:2px solid red;
+    padding: 1rem;
 }
 /* h2 */
 .font{
@@ -261,6 +257,7 @@ cite{
 .font-p{
     font-size: larger;
     font-style: italic;
+    margin-bottom: 1.5em;
 }
 /* 1ra caja */
 .ul-form{
@@ -270,6 +267,7 @@ cite{
     list-style: none;
     text-align: left;
     padding-bottom: 0.6em;
+    
 }
 .form-a{
     text-decoration: none;
@@ -301,7 +299,7 @@ cite{
     width: 50%;
     display:flex;
     flex-wrap: wrap;
-    border:1px solid blue;
+    
 }
 .h2-form{
     width: 100%;
@@ -353,7 +351,7 @@ cite{
     width: 100%;
     border-radius: 1em;
     border: 1px solid white;
-    padding:0.4em;  
+    padding:0.6em;  
     background-color: whitesmoke;
 }
 .input-form:focus{
@@ -369,7 +367,7 @@ footer{
     display: flex;
     justify-content: center;
     padding: 1em;
-    margin-top: 4em;
+    margin-top: 15em;
 }
 .footer{
     width: 50%;
@@ -384,6 +382,7 @@ footer{
     padding: 0.5em;
     font-family: 'Oswald', sans-serif;
     font-size: 1.2vw;
+    
 }
 .link:active{
     border:0.5px solid darkgreen;
@@ -414,3 +413,76 @@ footer{
     font-family: 'Dancing Script', cursive;
 }
 /*Fin footer*/
+
+/*Agrego mediqueris*/
+@media (max-width:900px){
+    header{
+        display:none;
+    }
+    .general{
+        flex-direction: column;
+        padding:0;
+        margin:0;
+    }
+    .hola{
+        width: 100%;
+        padding:0;
+        text-align: center;
+    }
+    .developer{
+        width:100%;
+    }
+    .main{
+        width:100%;
+    }
+    .cajitas{
+        width:47%;  
+    }
+    .cajita2{
+        width:47%;
+    }
+    .contacto{
+        flex-direction: column;
+        margin:1em;
+    }
+    .redes{
+        width:100%;
+    }
+    .writeme{
+        width: 100%;
+    }
+    .ul-form{
+        padding:0;
+    }
+    .form-li{
+        width:45%;
+        display: inline-block;
+    }
+}
+@media(max-width:500px){
+    .cajitas{
+        width: 100%;
+    }
+    .cajita2{
+        width:100%;
+    }
+    .form-li{
+        display:block;
+        width: 100%;
+        text-align: center;
+    }
+    .name{
+        width: 100%;
+    }
+    .surname{
+        width: 100%;
+    }
+}
+@media(max-width:700px){
+    .link{
+        display:none;
+    }
+    footer{
+        margin-top: 2em;
+    }
+}
